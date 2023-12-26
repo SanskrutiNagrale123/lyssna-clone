@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container main-nav flex">
+            <a href="#" class="company-logo">
+                <img src="./assets/logotype.svg" alt="company logo">
+
+            </a>
+            <div class="nav-links">
+                <!--  ul>li*6>a  -->
+                <ul class="flex">
+                    <li><a href="#" class="hover-link">Platform</a></li>
+                    <li><a href="#" class="hover-link">Solutions</a></li>
+                    <li><a href="#" class="hover-link">Customer</a></li>
+                    <li><a href="#" class="hover-link">Pricing</a></li>
+                    <li><a href="#" class="hover-link">Resources</a></li>
+                    <li><img src="assets/asset 1.svg" class="hover-link"></li>
+                    <li><a href="#" class="hover-link secondary-button">Log In</a></li>
+                    <li><a href="#" class="hover-link primary-button">Sign Up</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <header class="head flex"> 
+            <div class="header-left flex">
+                <img src="./assets/filters_quality(100).webp" class="left-image" alt="left">
+            </div>
+            <div class="header-center">
+                <h1>Your go-to user research platform</h1>
+                <p>The best teams use Lyssna so they can deeply understand their audience and move in the right direction —
+                    faster.</p>
+                <a href="#" class="center-button"> Sign Up for free!</a>
+                <p>No credit card required</p>
+            </div>
+            <div class="header-right">
+                <img src="./assets/filters_quality(100).webp" class="right-image" alt="right">
+            </div>
+    </header>
+
+    <section class="companies-section">
+        <div class="container">
+            <div class="logos-slide">
+                <img src="./assets/filters_quality(100) (425.webp" />
+                <img src="./assets/filters_quality(100) (56).webp" />
+                <img src="./assets/filters_quality(100)(60.webp" />
+                <img src="./assets/filters_quality(100) (55).webp" />
+                <img src="./assets/filters_quality(100) (52).webp" />
+                <img src="./assets/filters_quality(100) (51).webp" />
+                <img src="./assets/filters_quality(100) (50).webp" />
+                <img src="./assets/filters_quality(100) (47).webp" />
+                <img src="./assets/filters_quality(100) (46).webp" />
+                <img src="./assets/filters_quality(100) (45).webp" />
+                <img src="./assets/filters_quality(100) (43).webp" />
+                <img src="./assets/filters_quality(100) (42).webp" />
+                <img src="./assets/filters_quality(100) (41).webp" />
+                <img src="./assets/filters_quality(100) (40).webp" />
+                <img src="./assets/filters_quality(100) (39).webp" />
+                <img src="./assets/filters_quality(100) (38).webp" />
+                <img src="./assets/filters_quality(100) (37).webp" />
+                <img src="./assets/filters_quality(100) (22).webp" />
+            </div>
+
+            <div class="logos-slide">
+                <img src="./assets/filters_quality(100) (425.webp" />
+                <img src="./assets/filters_quality(100) (56).webp" />
+                <img src="./assets/filters_quality(100)(60.webp" />
+                <img src="./assets/filters_quality(100) (55).webp" />
+                <img src="./assets/filters_quality(100) (52).webp" />
+                <img src="./assets/filters_quality(100) (51).webp" />
+                <img src="./assets/filters_quality(100) (50).webp" />
+                <img src="./assets/filters_quality(100) (47).webp" />
+                <img src="./assets/filters_quality(100) (46).webp" />
+                <img src="./assets/filters_quality(100) (45).webp" />
+                <img src="./assets/filters_quality(100) (43).webp" />
+                <img src="./assets/filters_quality(100) (42).webp" />
+                <img src="./assets/filters_quality(100) (41).webp" />
+                <img src="./assets/filters_quality(100) (40).webp" />
+                <img src="./assets/filters_quality(100) (39).webp" />
+                <img src="./assets/filters_quality(100) (38).webp" />
+                <img src="./assets/filters_quality(100) (37).webp" />
+                <img src="./assets/filters_quality(100) (22).webp" />
+            </div>
+
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container2">
+             <div class="features-left">
+                <h2>How it works</h2>
+                <div class="note">
+                    <h3>Bring the voice of your audience into every decision.</h3>
+                </div>
+                <div class="text-box1">
+                    <h3>Create a study</h3>
+                    <p>Create a range of usability tests using a wide variety of methodologies, </br> or set up user interviews.</p>
+                </div>
+
+                <div class="text-box2">
+                    <h3>Recruit participants</h3>
+                    <p>You can recruit from your own audience or from our panel of over 530,000 participants.</p>
+                </div>
+
+                <div class="text-box3">
+                    <h3>Discover valuable insights</h3>
+                    <p>View your results to unlock powerful insights you can take action on, from strategy to execution.</p>
+                </div>
+             </div>
+
+             <div class="features-right">
+                <script>
+                    var i = 0 ;
+                    var images = [] ;
+                    var time = 2700  ;
+
+                    images[0] = './assets/filters_quality(100)1.webp' ;
+                    images[1] = './assets/filters_quality(100) (1).webp' ;
+                    images[2] = './assets/filters_quality(100) (2).webp' ;
+
+                    function changeImg() {
+                        document.slide.src = images[i] ;
+
+                        if(i < images.length-1) {
+                            i++ ;
+                        } else {
+                            i=0 ;
+                        }
+
+                        setTimeout("changeImg()" , time) ;
+                    }
+
+                    window.onload = changeImg ;
+                </script>
+
+                <div class="slideshow">
+                    <img name="slide">
+                </div>
+        </div>
+    </section>
+
+    <section class="big-features-sections">
+        <div class="container2">
+            <div class="written">
+                <h2>All your research in one place</h2>
+                <h3>The only platform you will need to uncover user insights — fast!</h3>
+            </div>
+
+            <div class="pictures flex">
+                <div class="box1 flex">
+                 <img src="./assets/filters_quality(100) (3).webp">
+                    <h3>Usability testing</h3>
+                    <p>Evaluate your product's ease of use with a wide range of testing methodologies.</p>
+                    <h3>Learn more <i class="fa-solid fa-arrow-right"></i></h3>
+                </div>
+                
+                <div class="box flex">
+                <img src="./assets/filters_quality(100) (5).webp">
+                    <h3>Interviews</h3>
+                    <p>Easily recruit, schedule, and track user interviews with one tool.</p>
+                    <h3>Learn more <i class="fa-solid fa-arrow-right"></i></h3>
+                </div>
+                
+                <div class="box flex">
+                <img src="./assets/filters_quality(100) (6).webp">
+                    <h3>Surveys</h3>
+                    <p>Make confident decisions by asking questions and validating your assumptions.</p>
+                    <h3>Learn more <i class="fa-solid fa-arrow-right"></i></h3>     
+                </div>
+
+                <div class="box flex">
+                <img src="./assets/filters_quality(100) (7).webp">
+                    <h3>Research panel</h3>
+                    <p>Get on-demand access to 530,000+ panelists. Target by more than 35 demographics.</p>
+                    <h3>Learn more <i class="fa-solid fa-arrow-right"></i></h3>
+                </div>
+
+                <div class="box flex">
+                <img src="./assets/filters_quality(100) (8).webp">
+                    <h3>Market Research</h3>
+                    <p>Talk to your target audience to understand their needs, preferences, and overall market trends.</p>
+                    <h3>Learn more <i class="fa-solid fa-arrow-right"></i></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container2 general-button flex"> 
+       <a href="#" class="generalButton">See platform overview</a>  
+    </div>
+
+    <section class="templates-sections">
+        <div class="container2">
+            <div class="written">
+                <h2 class="cover1">Get started with a template</h2>
+                <h3>Explore our template library to discover a wide </br>range of pre-designed templates</h3>
+            </div>
+
+            <div class="main"> 
+               <div class="templates">
+                   <div class="imgs">
+                       <input type="radio" name="slide" id="img1" checked>
+                       <input type="radio" name="slide" id="img2">
+                       <input type="radio" name="slide" id="img3">
+                       <input type="radio" name="slide" id="img4">
+   
+                       <img src="./assets/filters_quality(100) (9).webp" class="m1" alt="img1">
+                       <img src="./assets/filters_quality(100) (10).webp" class="m2" alt="img2">
+                       <img src="./assets/filters_quality(100) (11).webp" class="m3" alt="img3">
+                       <img src="./assets/filters_quality(100) (13).webp" class="m4" alt="img4">
+                   </div>
+                   <div class="dots">
+                       <label for="img1"></label>
+                       <label for="img2"></label>
+                       <label for="img3"></label>
+                       <label for="img4"></label>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="articles-section">
+        <div class="container">
+            <div class="articles-right">
+                <img class="article-img" src="./assets/filters_quality(100) (12).webp">
+            </div>
+
+            <div class="articles-left">
+                <a href="#" class="button-4">Marketing</a>
+                <h3>“We used to spend days collecting the data we can now get in an hour with Lyssna. We're able to get a sneak preview of our campaigns' performance before they even go live.”</h3>
+                <p>Aaron Shishler, </br> Copywriter Team Lead at monday.com</p>
+                <img class="monday-logo" src="./assets/filters_quality(100) (14).webp">
+                <!-- <div class="circles">
+                    <input type="radio" name="arrows" id="left">
+                    <input type="radio" name="arrows" id="right">
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="prefooter-section">
+        <div class="container3">
+            <div class="written">
+                <h2 class="cover1">Try for free today</h2>
+                <h3>Join over 320,000+ marketers, designers, researchers, and product leaders who use Lyssna to make data-driven decisions.</h3>
+                <a href="#" class="button-5">Sign up for free</a>
+                <p class="special">No credit card required</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container3 flex footer-container">
+            <a href="#" class="company-logo">
+                <img src="./assets/logotype.svg" alt="company logo">
+            </a>
+            <div class="link-column flex">
+                <h4>Company</h4>
+                <a href="#" class="hover-links">About us</a>
+                <a href="#" class="hover-links">Careers</a>
+                <a href="#" class="hover-links">Contact us</a>
+                <a href="#" class="hover-links">Customers</a>
+                <a href="#" class="hover-links">Privacy Policy</a>
+                <a href="#" class="hover-links">Security Information</a>
+                <a href="#" class="hover-links">Status page</a>
+                <a href="#" class="hover-links">Terms & Conditions</a>
+            </div>
+
+            <div class="link-column flex">
+                <h4>Platform</h4>
+                <a href="#" class="hover-links">Overview</a>
+                <a href="#" class="hover-links">Pricing</a>
+                <a href="#" class="hover-links">Card sorting</a>
+                <a href="#" class="hover-links">Five second testing</a>
+                <a href="#" class="hover-links">Interviews</a>
+                <a href="#" class="hover-links">Panel order calculation</a>
+                <a href="#" class="hover-links">Preference typing</a>
+                <a href="#" class="hover-links">Prototype testing</a>
+                <a href="#" class="hover-links">Research Panel</a>
+                <a href="#" class="hover-links">Self recruitment</a>
+                <a href="#" class="hover-links">Surveys</a>
+                <a href="#" class="hover-links">Sign in</a>
+            </div>
+
+            <div class="link-column flex">
+                <h4>Solutions</h4>
+                <a href="#" class="hover-links">Enterprise</a>
+                <a href="#" class="hover-links">Marketing</a>
+                <a href="#" class="hover-links">Product</a>
+                <a href="#" class="hover-links">UX and UI Design</a>
+                <a href="#" class="hover-links">UX Research</a>
+            </div>
+
+            <div class="link-column flex">
+                <h4>Resources</h4>
+                <a href="#" class="hover-links">Resources hub</a>
+                <a href="#" class="hover-links">Blog</a>
+                <a href="#" class="hover-links">Videos</a>
+                <a href="#" class="hover-links">Guides</a>
+                <a href="#" class="hover-links">Templates</a>
+                <a href="#" class="hover-links">Help center</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="subfooter">
+        <div class="container3 flex subfooter-container">
+            <img class="footer-logos" src="./assets/facebook.svg">
+            <img class="footer-logos" src="./assets/twitter.svg">
+            <img class="footer-logos" src="./assets/linkedin.svg">
+            <img class="footer-logos" src="./assets/youtube.svg">
+            <img class="footer-logos" src="./assets/instagram.svg">
+        </div>
+    </div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/bfbc0ba5d5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
